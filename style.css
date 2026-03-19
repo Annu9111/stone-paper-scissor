@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     text-align: center;
+    /* background-color: rgb(212, 248, 182); */
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+
 }
 h1 {
   /* font-family: 'Poppins', sans-serif; */
@@ -21,7 +28,8 @@ h1:hover {
 
 .choice{
     height: 320px;
-    width:165px;
+    width:250px;
+    /* margin-top: 2rem; */
     /* overflow: hidden; */
 }
 
@@ -37,8 +45,14 @@ img{
 
 .choice:hover {
   transform: scale(1.1);
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .choices{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    margin-top: 2rem;
 }

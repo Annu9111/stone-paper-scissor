@@ -21,10 +21,10 @@ h1 {
   line-height: 5rem;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
-h1:hover {
+/* h1:hover {
   transform: scale(1.02);
   transition: 0.3s;
-}
+} */
 
 .choice{
     height: 320px;
@@ -67,7 +67,29 @@ img{
     align-items: center;
     justify-content: center;
     font-size: 2rem;
+    margin-top: 1rem;
+    gap:5rem;
 }
 #user-score,#comp-score{
-    
+    font-size: 3rem;
+    color: #350a0a;
+}
+
+.msg-container{
+    margin-top: 1.5rem;
+}
+
+#msg{
+    background: linear-gradient(135deg,rgb(240, 151, 62),purple);
+    color: #350a0a;
+    font-size: 1.6rem;
+    /* margin-top: 1rem; */
+    display: inline;
+    padding: 0.7rem;
+    border-radius: 40%;
+    border: none;
+}
+button:hover{
+    transform: scale(1.05);
+    /* box-shadow:3 #f775d0; */
 }

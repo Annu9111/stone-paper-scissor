@@ -17,9 +17,10 @@ const genCompChoice=() =>{
 }
 
 const drawGame=() =>{
-    console.log("It's a Draw")
+    // console.log("It's a Draw")
     msg.innerText="It's a Draw"
     msg.style.background="#6c757d"
+    drawSound.play();
 }
 
 const  showWinner =(userwin,userChoice,compChoice)=>{
@@ -28,6 +29,7 @@ const  showWinner =(userwin,userChoice,compChoice)=>{
         userScorePara.innerText=userScore;
         // console.log("You win");
         msg.innerText=`🎉You Win!🎊 Your ${userChoice} beats ${compChoice}`;
+        winSound.play();
         msg.style.background = "green";
         msg.style.color="white";
     }else{
@@ -35,6 +37,7 @@ const  showWinner =(userwin,userChoice,compChoice)=>{
         compScorePara.innerText=compScore;
         // console.log("You lose");
         msg.innerText=`You Lose!😥 ${compChoice} beats Your ${userChoice}`;
+        loseSound.play();
         msg.style.background = "red";
         msg.style.color="white";
     }

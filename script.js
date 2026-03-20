@@ -6,6 +6,10 @@ const msg=document.querySelector("#msg");
 const userScorePara=document.querySelector("#user-score");
 const compScorePara=document.querySelector("#comp-score");
 
+const winSound = new Audio("win.mp3");
+const loseSound = new Audio("lose.wav");
+const drawSound = new Audio("draw.mp3");
+
 const genCompChoice=() =>{
     const options=["rock","paper","scissor"];
     const randindx=Math.floor(Math.random()*3);
